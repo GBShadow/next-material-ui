@@ -14,7 +14,7 @@ interface Product {
 }
 
 export default function Content() {
-  const [products, setProducts] = useState<Product[]>();
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     setProducts(data);
@@ -35,7 +35,6 @@ export default function Content() {
           </Grid>
         ))
       }
-
     </Grid>
   );
 }
